@@ -1,12 +1,13 @@
 package pr20;
 import java.util.*;
 import java.io.*;
+
 public class pr20Matricies
 	{
 
 		public static void main(String[] args) throws IOException
 			{
-				Scanner file = new Scanner(new File( "Untitled1" ));
+				Scanner file = new Scanner(new File( "pr20.dat" ));
 			      int times = file.nextInt();      
 			      file.nextLine();
 			      int sum = 0;
@@ -16,7 +17,14 @@ public class pr20Matricies
 						int r = file.nextInt();
 						int c = file.nextInt();
 						int specialNumber = myMatrix[r][c];
-						int 
+						if ((r>0 && r<4)&&( c>0 && c<4))
+	                        //  for(int i = 0 ; i<9; i++)
+	                            {
+	                                 
+	                             
+	                            int a = myMatrix[r-1][c-1]+myMatrix[r-1][c]+myMatrix[r-1][c+1]+myMatrix[r][c-1]+specialNumber+myMatrix[r][c+1]+myMatrix[r+1][c-1]+myMatrix[r+1][c]+myMatrix[r+1][c+1];
+	                            System.out.println(a);
+	                            }
 					}
 			}
 
