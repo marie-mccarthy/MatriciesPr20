@@ -17,14 +17,14 @@ public class pr20Matricies
 						int r = file.nextInt();
 						int c = file.nextInt();
 						int specialNumber = myMatrix[r][c];
-						if ((r>0 && r<4)&&( c>0 && c<4))
-	                        //  for(int i = 0 ; i<9; i++)
+						if ((r>1 && r<3)&&( c>1 && c<3))
 	                            {
-	                                 
-	                             
-	                            int a = myMatrix[r-1][c-1]+myMatrix[r-1][c]+myMatrix[r-1][c+1]+myMatrix[r][c-1]+specialNumber+myMatrix[r][c+1]+myMatrix[r+1][c-1]+myMatrix[r+1][c]+myMatrix[r+1][c+1];
+	                            int a = myMatrix[r-1][c-1]+myMatrix[r-1][c]+myMatrix[r-1][c+1]
+	                            		+myMatrix[r][c-1]+specialNumber+myMatrix[r][c+1]+
+	                            		myMatrix[r+1][c-1]+myMatrix[r+1][c]+myMatrix[r+1][c+1];
 	                            System.out.println(a);
 	                            }
+				//		if((r<0 && r<4)&&( c>0 && c<4))
 					}
 			}
 
