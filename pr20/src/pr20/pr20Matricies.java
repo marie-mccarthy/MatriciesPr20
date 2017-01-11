@@ -11,7 +11,11 @@ public class pr20Matricies
 			      int times = file.nextInt();      
 			      file.nextLine();
 			      int sum = 0;
-				int[][] myMatrix = {{1,2,3,4,5},{6,7,8,9,0},{6,7,1,2,5},{6,7,8,9,0},{5,4,3,2,1}};
+				int[][] myMatrix = {{1,2,3,4,5},
+									{6,7,8,9,0},
+									{6,7,1,2,5},
+									{6,7,8,9,0},
+									{5,4,3,2,1}};
 				for( int zz = 0; zz < times; zz++ )
 					{
 						int r = file.nextInt();
@@ -20,11 +24,17 @@ public class pr20Matricies
 						if ((r>1 && r<3)&&( c>1 && c<3))
 	                            {
 	                            int a = myMatrix[r-1][c-1]+myMatrix[r-1][c]+myMatrix[r-1][c+1]
-	                            		+myMatrix[r][c-1]+specialNumber+myMatrix[r][c+1]+
+	                            		+myMatrix[r][c-1]+specialNumber    +myMatrix[r][c+1]+
 	                            		myMatrix[r+1][c-1]+myMatrix[r+1][c]+myMatrix[r+1][c+1];
 	                            System.out.println(a);
 	                            }
-				//		if((r<0 && r<4)&&( c>0 && c<4))
+						else
+							{
+								if(c<1)
+									{
+										
+									}
+							}
 					}
 			}
 
