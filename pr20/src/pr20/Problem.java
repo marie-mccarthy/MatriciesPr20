@@ -8,7 +8,7 @@ public class Problem
 		public static void main(String[] args) throws IOException
 			{
 		        //hello
-	             Scanner file = new Scanner(new File( "pr100.dat" ));
+	             Scanner file = new Scanner(new File( "pr20.dat" ));
 	             int times = file.nextInt();      
 	             file.nextLine();
 	              
