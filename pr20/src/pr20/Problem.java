@@ -2,13 +2,13 @@ package pr20;
 import java.util.*;
 import java.io.*;
 
-public class pr20Matricies
+public class Problem
 	{
 
 		public static void main(String[] args) throws IOException
 			{
-		        
-	             Scanner file = new Scanner(new File( "pr20.dat" ));
+		        //hello
+	             Scanner file = new Scanner(new File( "pr100.dat" ));
 	             int times = file.nextInt();      
 	             file.nextLine();
 	              
